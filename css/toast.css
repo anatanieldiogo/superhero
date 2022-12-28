@@ -1,0 +1,141 @@
+.toast {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  max-width: 400px;
+  width:90%;
+  padding: 12px 7px;
+  background-color: #2D7FD9;;
+  font-family: sans-serif;
+  text-align: center;
+  border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  user-select:none;
+  animation:scale .3s;
+  z-index: 110;
+}
+.toast:hover {
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.20), inset 0 -1px 0 0 rgba(0,0,0,.20);
+}
+
+.toast--visible {
+  top: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.toast--default {
+  background: #fff;
+  border-color: #fff;
+}
+.toast--success {
+  background: rgba(58, 188, 255,1);
+  border-color: rgba(58, 188, 255,1);
+  color: #ffffff;
+}
+
+.toast--danger {
+  background: #ed4c78;
+  border-color: #ed4c78;
+  color: #ffffff;
+}
+
+.toast--alert {
+  background: rgba(255,185,0);
+  border-color: rgba(255,185,0);
+  color: #ffffff;
+}
+/*Toast positions*/
+.toast--left {
+  left: 30px;
+  margin:0;
+}
+.toast--center {
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+}
+.toast--right {
+  top:20px;
+  right:0px;
+  margin:0;
+}
+.toast--bottom {
+  top:90%;
+}
+.toast--bottom_left {
+  bottom:20px;
+  left:30px;
+  margin:0;
+}
+
+/*Toast-2*/
+.toast-image{
+  position: fixed;
+  bottom: -100%;
+  left: 40px;
+  margin: auto;
+  max-width: 350px;
+  width:90%;
+  padding: 12px 7px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+  user-select:none;
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  transition: all .3s ease;
+}
+.toast-image:hover {
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.20), inset 0 -1px 0 0 #dadce0;
+}
+.toast-image img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+.toast-image h2{
+  width: 100%;
+}
+.toast-image a{
+  color: rgba(58, 188, 255,1);
+  user-select: auto;
+  margin-right: 7px;
+}
+
+.toast-image--visible {
+  bottom: 40px;
+}
+
+@keyframes scale {
+0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}1% {
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}80% {
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
+}100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+}
+
+@media screen and (max-width: 499px){
+	.toast-image{
+    right: 0;
+    left: 0;
+  }
+}

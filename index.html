@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes</title>
+
+    <link rel="icon" href="img/super_hero_icon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fontes.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+
+    <script src="js/jQuery.js"></script>
+</head>
+
+<body>
+
+    <div class="hero-splash">
+        <img src="img/Super_hero_no_border.svg" alt="">
+    </div>
+
+    <aside class="aside">
+        <nav class="menu flexfix">
+            <div class="logo-hero">
+                <a href="">
+                    <img src="img/super_hero_icon.svg" alt="Superhero">
+                </a>
+            </div>
+            <div class="nav-menu flexfix">
+                <ul>
+                    <li class="active-menu click tooltip" onclick="panels(0)"><i class="fab fa-houzz"></i>
+                        <span class="tooltip-text">Home</span>
+                    </li>
+                    <li class="click tooltip" onclick="panels(2)"><i class="fas fa-gamepad"></i>
+                        <span class="tooltip-text">Fight</span>
+                    </li>
+                    <li class="click tooltip"><i class="fas fa-mask"></i>
+                        <span class="tooltip-text">Heroes</span>
+                    </li>
+                    <li class="click tooltip"><i class="fas fa-bolt"></i>
+                        <span class="tooltip-text">Powers</span>
+                    </li>
+                    <li class="click tooltip"><i class="fas fa-cog"></i>
+                        <span class="tooltip-text">Definition</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <main class="container">
+        <header class="header">
+            <!--- adicionar a class blur com js quando o scroll descer-->
+            <div class="header-left">
+                <form class="search-form blur">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search by hero name..." class="hero-search">
+                    <span class="flexfix click"><i class="fas fa-times"></i></span>
+                </form>
+                <div class="search-results blur scroll2">
+                    <!--- Heroes results -->
+                </div>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="click"><i class="fas fa-bell"></i></li>
+                    <li class="click"><i class="fas fa-heart"></i></li>
+                    <li class="click"><i class="fas fa-sun"></i></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="content panels-panels">
+                <div class="loading-hero-info">
+                    <img src='img/spinner.svg' alt='spinner'>
+                </div>
+                <!-- PANEL 'INDEX 0' -->
+                <div class="content-panel scroll">
+                    <div class="loading-tamb-hero">
+                        <img src='img/spinner.svg' alt='spinner'>
+                    </div>
+                    <div class="add-blur">
+                        <!--TAMB HERO-->
+                    </div>
+
+                    <h2 class="hero-title">Saved</h2>
+
+                    <section class="hero-most-content scroll">
+                        <!--- SAVED HEROES    -->
+                    </section>
+
+                    <!--h2 class="hero-title">Combat simulation</h2-->
+                    <!--- COMBAT SECTION HERE    -->
+                </div>
+                <!-- PANEL  'INDEX 1' -->
+                <div class="content-panel scroll">
+                    <!-- LEAVE THIS PANEL EMPTY -->
+                </div>
+
+                <!-- PANEL 'INDEX 2' -->
+                <div class="content-panel scroll">
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam voluptates ad sequi
+                        ut voluptatibus modi velit fugit ipsum, nisi possimus voluptatem atque iste iusto delectus
+                        facere fuga quidem ratione.</p>
+                </div>
+
+            </div>
+
+            <div class="hero-static">
+                <div class="hero-static-left">
+                    <h2 class="hero-title">Fights</h2>
+
+                    <div class="hero-cmbt-made scroll">
+                        <div class="hero-cmbt-blur click">
+                            <div class="hero-fights blur">
+                                <div class="hero-fights-fighters">
+                                    <div class="hero-fighters-item">
+                                        <img src="img/user.jpg" alt="">
+                                        <p>Spider man</p>
+                                    </div>
+                                    <div class="hero-fighters-item">
+                                        <span>VS</span>
+                                    </div>
+                                    <div class="hero-fighters-item">
+                                        <img src="img/user.jpg" alt="">
+                                        <p>Batman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-cmbt-blur click">
+                            <div class="hero-fights blur">
+                                <div class="hero-fights-fighters">
+                                    <div class="hero-fighters-item">
+                                        <img src="img/user.jpg" alt="">
+                                        <p>Spider man</p>
+                                    </div>
+                                    <div class="hero-fighters-item">
+                                        <span>VS</span>
+                                    </div>
+                                    <div class="hero-fighters-item">
+                                        <img src="img/user.jpg" alt="">
+                                        <p>Batman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-cmbt-blur click">
+                            <div class="hero-fights blur">
+                                <div class="hero-fights-fighters">
+                                    <div class="hero-fighters-item">
+                                        <img src="img/user.jpg" alt="">
+                                        <p>Spider man</p>
+                                    </div>
+                                    <div class="hero-fighters-item">
+                                        <span>VS</span>
+                                    </div>
+                                    <div class="hero-fighters-item">
+                                        <img src="img/user.jpg" alt="">
+                                        <p>Batman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-cmbt-blur click">
+                            <div class="hero-fights blur">
+                                <div class="hero-fights-fighters">
+                                    <div class="hero-fighters-item">
+                                        <img src="img/user.jpg" alt="">
+                                        <p>Spider man</p>
+                                    </div>
+                                    <div class="hero-fighters-item">
+                                        <span>VS</span>
+                                    </div>
+                                    <div class="hero-fighters-item">
+                                        <img src="img/user.jpg" alt="">
+                                        <p>Batman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hero-static-right">
+                    <div class="heroes">
+                        <div class="all-hero blur">
+                            <img src="img/super_hero_icon.svg" alt="Anataniel Diogo">
+                            <h2>All heroes</h2>
+                        </div>
+                        <div class="heroes-content scroll">
+                            <!-- ALL HEROES -->
+                            <div class="loading-heroes">
+                                <img src='img/spinner.svg' alt='spinner'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/toast.js"></script>
+</body>
+
+</html>
